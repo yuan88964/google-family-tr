@@ -1,0 +1,70 @@
+site_name: Google 账户加入土区家庭组教程
+site_url: https://yuan88964.github.io/google-family-tr/
+site_description: 从建立土耳其支付资料、切换 Google Play 国家，到接受家庭组邀请的图文教程
+repo_url: https://github.com/yuan88964/google-family-tr
+repo_name: yuan88964/google-family-tr
+edit_uri: ""
+
+theme:
+  name: material
+  language: zh
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: 切换到深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到浅色模式
+  font: false
+  icon:
+    logo: material/google
+  features:
+    - navigation.footer
+    - navigation.top
+    - navigation.instant
+    - navigation.tracking
+    - toc.follow
+    - search.highlight
+
+nav:
+  - 首页: index.md
+  - 1. 准备工作: prepare.md
+  - 2. 建立土区支付资料: payments.md
+  - 3. 确认 Play 国家已切换: play-country.md
+  - 4. 加入家庭组: family.md
+  - 5. 常见问题与报错: faq.md
+  - 附录 A：虚拟卡与代办服务: appendix-card.md
+  - 附录 B：把 Google 改成中文界面: appendix-language.md
+
+plugins:
+  - search:
+      separator: '[\s\-，。、；：？！（）“”]+'
+  - glightbox:
+      zoomable: true
+      draggable: false
+      skip_classes:
+        - no-zoom
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - toc:
+      permalink: true
+      title: 本页内容
+
+extra_css:
+  - stylesheets/extra.css

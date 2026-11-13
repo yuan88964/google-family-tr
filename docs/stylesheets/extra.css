@@ -1,0 +1,77 @@
+/* 接近 Google 帮助中心的观感 */
+:root {
+  --md-text-font: "Google Sans", "Roboto", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --md-code-font: "Roboto Mono", Consolas, monospace;
+  --g-red: #ea4335;
+  --g-blue: #1a73e8;
+}
+
+body, input { font-family: var(--md-text-font); }
+
+.md-typeset { font-size: 0.82rem; line-height: 1.75; }
+.md-typeset h1 { font-weight: 500; color: var(--md-default-fg-color); }
+.md-typeset h2 { font-weight: 500; border-bottom: 1px solid var(--md-default-fg-color--lightest); padding-bottom: .3em; }
+.md-typeset a { color: var(--g-blue); }
+
+/* 截图：带细边框和阴影，像 Google 文档里的配图 */
+.md-typeset img.shot,
+.md-typeset p > a.glightbox > img {
+  border: 1px solid #dadce0;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(60, 64, 67, .15);
+  margin: .6em 0 1em;
+  max-width: 100%;
+}
+
+/* 设备标签：💻 电脑 / 📱 手机 */
+.device {
+  display: inline-block;
+  font-size: .72rem;
+  padding: .1em .7em;
+  border-radius: 1em;
+  background: #e8f0fe;
+  color: var(--g-blue);
+  margin-right: .4em;
+  vertical-align: middle;
+}
+
+/* 步骤编号圆点，与截图上的标注一致 */
+.step {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  background: var(--g-red);
+  color: #fff;
+  font-size: .8em;
+  font-weight: 700;
+  margin-right: .3em;
+  vertical-align: .1em;
+}
+
+/* 首页三步速览卡片 */
+.quick {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: .8rem;
+  margin: 1rem 0;
+}
+.quick > div {
+  border: 1px solid #dadce0;
+  border-radius: 8px;
+  padding: .8rem 1rem;
+}
+.quick b { color: var(--g-red); font-size: 1.2em; margin-right: .3em; }
+
+/* 代办广告条 */
+.service {
+  border-left: 4px solid var(--g-red);
+  background: #fce8e6;
+  padding: .6rem 1rem;
+  border-radius: 0 6px 6px 0;
+  margin: 1rem 0;
+}
+[data-md-color-scheme="slate"] .service { background: rgba(234, 67, 53, .12); }
+[data-md-color-scheme="slate"] .device { background: rgba(26, 115, 232, .2); }

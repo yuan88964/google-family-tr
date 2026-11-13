@@ -1,0 +1,4 @@
+mkdocs-material>=9.5
+mkdocs-glightbox>=0.4
+pillow>=10
+pyyaml>=6

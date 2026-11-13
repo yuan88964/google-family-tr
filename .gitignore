@@ -1,0 +1,8 @@
+# 生成的网站
+site/
+__pycache__/
+
+# 原始截图含有未打码的隐私信息，只留在本地
+raw/*
+!raw/说明.md
+!raw/annotations.yaml
