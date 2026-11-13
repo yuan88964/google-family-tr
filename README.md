@@ -10,6 +10,7 @@
 |---|---|
 | `docs/` | 教程正文（Markdown）和标注后的截图 |
 | `raw/` | 原始截图（不上传）、标注说明 `说明.md`、标注坐标 `annotations.yaml` |
+| `scripts/render_mockups.py` | 把 `scripts/mockups/*.html` 示意图渲染成 `raw/*.png` |
 | `scripts/annotate.py` | 读取 `raw/annotations.yaml`，给截图加红框、箭头、编号并打码，输出到 `docs/images/` |
 | `.github/workflows/deploy.yml` | 推送到 `main` 后自动构建网站并发布到 GitHub Pages |
 

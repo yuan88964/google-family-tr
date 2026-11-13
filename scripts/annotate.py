@@ -17,6 +17,7 @@ annotations.yaml 格式（坐标单位是原图像素，矩形写左上角和右
       nums:   [1, 2, ...]                              # 或者：按顺序给每个框配编号，圆点自动放在框左侧
       blur:   [[x1, y1, x2, y2], ...]                  # 高斯模糊打码
       crop:   [x1, y1, x2, y2]                         # 可选，最后裁剪
+      src:    fam-03                                   # 可选，借用另一张原图
       width:  1600                                     # 可选，输出最大宽度
 """
 
@@ -82,7 +83,7 @@ def draw_arrow(d: ImageDraw.ImageDraw, a, b, w: int) -> None:
 
 
 def annotate(name: str, spec: dict) -> Path:
-    src = find_raw(name)
+    src = find_raw(spec.get("src", name))
     if src is None:
         img = placeholder(name, spec.get("title", ""))
     else:
@@ -130,7 +131,7 @@ def main(argv: list[str]) -> None:
     for name in names:
         spec = specs.get(name) or {}
         dst = annotate(name, spec)
-        state = "已标注" if find_raw(name) else "占位图"
+        state = "已标注" if find_raw(spec.get("src", name)) else "占位图"
         print(f"{name}: {state} -> {dst.relative_to(ROOT)}")
 
 

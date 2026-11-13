@@ -18,9 +18,9 @@
 1. 打开 [families.google.com](https://families.google.com)，登录你的账号。
 2. 看页面显示的内容：
     - 显示"创建家庭群组"之类的入口：说明你**不在**任何家庭组里，直接进入下一节。
-    - 显示一个家庭组和成员列表：说明你**已经在**一个家庭组里，点 <span class="step">1</span> 处的"退出家庭群组"（Leave family group）退出。
+    - 显示一个家庭组和成员列表：说明你**已经在**一个家庭组里，点"退出家庭群组"（Leave family group）<span class="step">1</span>，按提示确认退出。
 
-![families.google.com 显示的家庭组状态](images/prep-01.png){ .shot }
+![示意图：families.google.com 上的"退出家庭群组"](images/prep-01.png){ .shot }
 
 !!! warning "退出前先想清楚"
     Google 规定：**12 个月内只能换一次家庭组**（退出后重新加入原来的家庭组不受限制）。如果你过去 12 个月里刚换过，现在退出后，短时间内可能无法加入新的家庭组。详见 [4. 加入家庭组](family.md#rules)。

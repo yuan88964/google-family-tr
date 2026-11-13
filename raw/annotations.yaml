@@ -85,12 +85,8 @@
   crop: [0, 0, 1024, 605]
 
 # ---------- 待补截图（目前生成占位图） ----------
-"prep-01": {title: "families.google.com · 当前家庭组状态"}
 "play-01": {title: "play.google.com · 头像菜单中的设置"}
 "play-02": {title: "Play 设置 · 国家/地区和个人资料"}
-"fam-01": {title: "Gmail · 家庭组邀请邮件"}
-"fam-02": {title: "接受邀请 · 加入家庭组确认页"}
-"fam-03": {title: "families.google.com · 成员列表"}
 "B1": {title: "myaccount.google.com/language · 语言一栏"}
 "B2": {title: "语言选择框 · 选中简体中文"}
 
@@ -126,3 +122,26 @@
   boxes: [[306, 191, 670, 269]]
   nums: [1]
   blur: [[155, 158, 277, 174]]
+
+# ---------- 第 4 节：家庭组（示意图，由 scripts/mockups 渲染） ----------
+"fam-01":
+  title: 示意图 · Gmail 邀请邮件
+  boxes: [[544, 496, 680, 548]]
+  nums: [1]
+  crop: [0, 0, 1280, 660]
+"fam-02":
+  title: 示意图 · 加入家庭群组确认页
+  boxes: [[780, 570, 926, 620]]
+  nums: [1]
+  crop: [0, 0, 1280, 680]
+"fam-03":
+  title: 示意图 · 家庭群组成员列表
+  boxes: [[278, 330, 1002, 408]]
+  nums: [1]
+  crop: [0, 0, 1280, 520]
+"prep-01":
+  title: 示意图 · 退出家庭群组
+  src: fam-03
+  boxes: [[512, 428, 608, 458]]
+  marks: [[608, 428, 1]]
+  crop: [0, 0, 1280, 520]
