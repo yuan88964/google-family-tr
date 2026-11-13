@@ -21,6 +21,10 @@
 
     ![Play 设置底部的"国家/地区和个人资料"](images/play-03.png){ .shot }
 
+    改好之后，土耳其会出现在列表里并被选中 <span class="step">1</span>，像下面这样：
+
+    ![示意图：Play 国家已选中土耳其](images/play-04.png){ .shot }
+
 !!! note "上图是一个改不了的例子"
     上图只列出了"美国"，而且下方有一行提示 <span class="step">2</span>："您无法更改 Google Play 国家/地区和支付资料设置，因为您的账号是某个家庭组的成员。"这就属于下面的情况一。
 

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><link rel="stylesheet" href="base.css">
+<style>
+.shade { position: absolute; inset: 0; background: rgba(0,0,0,.32); }
+.dlg { position: absolute; top: 90px; left: 400px; width: 480px; background: #fff; border-radius: 24px; padding: 24px 0 18px; box-shadow: 0 8px 24px rgba(0,0,0,.25); }
+.dlg h2 { font-size: 22px; font-weight: 400; padding: 0 24px 16px; }
+.search { margin: 0 24px 10px; height: 48px; border: 2px solid #0b57d0; border-radius: 8px; display: flex; align-items: center; padding: 0 14px; font-size: 16px; }
+.item { padding: 14px 24px; font-size: 15px; display: flex; align-items: center; gap: 14px; }
+.item.on { background: #e8f0fe; }
+.radio { width: 18px; height: 18px; border-radius: 50%; border: 2px solid #5f6368; }
+.on .radio { border: 5px solid #0b57d0; }
+.region { margin: 10px 24px 0; font-size: 13px; color: #5f6368; }
+.sel { margin: 6px 24px 0; height: 44px; border: 1px solid #747775; border-radius: 4px; display: flex; align-items: center; justify-content: space-between; padding: 0 14px; font-size: 15px; }
+.actions { display: flex; justify-content: flex-end; gap: 8px; padding: 22px 24px 0; }
+</style></head><body>
+<div class="bar"><div class="logo"><b><span class="g1">G</span><span class="g2">o</span><span class="g3">o</span><span class="g1">g</span><span class="g4">l</span><span class="g2">e</span></b>&nbsp;Account</div><div class="spacer"></div><span class="avatar a3">你</span></div>
+<div class="shade"></div>
+<div class="dlg">
+  <h2>Preferred language</h2>
+  <div class="search">🔍&nbsp;&nbsp;中文</div>
+  <div class="item on"><span class="radio"></span>中文（简体）</div>
+  <div class="item"><span class="radio"></span>中文（繁體）</div>
+  <div class="item"><span class="radio"></span>粵語（中文）</div>
+  <div class="region">Region</div>
+  <div class="sel"><span>中国</span><span>▾</span></div>
+  <div class="actions"><span class="btn btn-text">Cancel</span><span class="btn btn-primary">Select</span></div>
+</div>
+</body></html>

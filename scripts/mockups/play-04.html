@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><link rel="stylesheet" href="base.css">
+<style>
+.main { width: 760px; margin: 0 0 0 150px; padding-top: 26px; }
+h1 { font-size: 22px; font-weight: 400; margin-bottom: 26px; }
+.sec { border-top: 1px solid #e8eaed; padding: 22px 0; }
+.sec h3 { font-size: 14px; color: #5f6368; font-weight: 400; margin-bottom: 16px; }
+.opt { display: flex; align-items: center; gap: 14px; padding: 8px 0; font-size: 14px; }
+.radio { width: 18px; height: 18px; border-radius: 50%; border: 2px solid #5f6368; flex: none; }
+.radio.on { border: 5px solid #1a73e8; }
+.flag { width: 30px; height: 20px; border-radius: 2px; flex: none; position: relative; overflow: hidden; }
+.tr { background: #e30a17; color: #fff; font-size: 14px; line-height: 20px; text-align: center; }
+.us { background: repeating-linear-gradient(#b22234 0 2px, #fff 2px 4px); }
+.us::before { content: ""; position: absolute; left: 0; top: 0; width: 13px; height: 11px; background: #3c3b6e; }
+.opt small { display: block; color: #5f6368; font-size: 12px; }
+.tip { font-size: 12px; color: #5f6368; margin-top: 14px; line-height: 1.7; }
+.checkbox { width: 14px; height: 14px; border: 1px solid #5f6368; border-radius: 2px; }
+</style></head><body>
+<div class="bar"><div class="logo"><span style="font-size:24px;color:#34a853">▶</span><b style="color:#5f6368">Google Play</b></div><span class="muted" style="font-size:14px;margin-left:24px">游戏&nbsp;&nbsp;&nbsp;&nbsp;应用&nbsp;&nbsp;&nbsp;&nbsp;影视&nbsp;&nbsp;&nbsp;&nbsp;图书&nbsp;&nbsp;&nbsp;&nbsp;儿童</span><div class="spacer"></div><span class="avatar a3">你</span></div>
+<div class="main">
+  <h1>设置</h1>
+  <div class="sec"><h3>电子邮件接收设置</h3>
+    <div class="opt"><span class="checkbox"></span>告知我 Google Play 的最新动态和优惠信息。</div>
+    <div class="opt"><span class="checkbox"></span>我希望在开发者回复我对其应用的评价时收到电子邮件通知。</div>
+  </div>
+  <div class="sec"><h3>验证偏好设置</h3>
+    <div class="opt"><span class="radio on"></span>通过 play.google.com 购物和安装应用时</div>
+    <div class="opt"><span class="radio"></span>仅在通过 play.google.com 安装应用时</div>
+  </div>
+  <div class="sec"><h3>国家/地区和个人资料</h3>
+    <div class="opt"><span class="radio on"></span><span class="flag tr">☾★</span><span>土耳其<small>你的名字</small></span></div>
+    <div class="opt"><span class="radio"></span><span class="flag us"></span><span>美国<small>你的名字</small></span></div>
+    <div class="tip">您能看到哪些内容取决于您的 Google Play 国家/地区设置。系统还可能会根据您的 IP 地址显示本地内容。</div>
+  </div>
+</div>
+</body></html>

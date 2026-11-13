@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><link rel="stylesheet" href="base.css">
+<style>
+.tabs { display: flex; justify-content: center; gap: 34px; font-size: 13px; color: #3c4043; height: 44px; align-items: center; border-bottom: 1px solid #e0e0e0; }
+.tabs .on { color: #1a73e8; border-bottom: 3px solid #1a73e8; padding: 12px 0 9px; }
+.shade { position: absolute; inset: 0; background: rgba(0,0,0,.32); }
+.dlg { position: absolute; top: 70px; left: 410px; width: 460px; background: #fff; border-radius: 8px; padding: 24px 24px 20px; box-shadow: 0 8px 24px rgba(0,0,0,.25); }
+.dlg h2 { font-size: 20px; font-weight: 400; margin-bottom: 6px; }
+.brands { font-size: 12px; color: #5f6368; margin-bottom: 18px; }
+.f { height: 50px; border: 1px solid #80868b; border-radius: 4px; display: flex; align-items: center; padding: 0 14px; color: #5f6368; font-size: 15px; margin-bottom: 14px; }
+.two { display: flex; gap: 14px; } .two .f { flex: 1; }
+.addr { font-size: 13px; color: #3c4043; line-height: 1.7; background: #f8f9fa; border-radius: 4px; padding: 10px 14px; margin-bottom: 8px; }
+.legal { font-size: 11px; color: #5f6368; line-height: 1.6; margin: 10px 0 14px; }
+.actions { display: flex; justify-content: flex-end; gap: 8px; }
+.actions .btn { border-radius: 4px; }
+</style></head><body>
+<div class="bar"><div class="logo"><b><span class="g1">G</span><span class="g2">o</span><span class="g3">o</span><span class="g1">g</span><span class="g4">l</span><span class="g2">e</span></b>&nbsp;付款中心</div><div class="spacer"></div><span class="avatar a3">你</span></div>
+<div class="tabs"><span>活动</span><span class="on">支付方式</span><span>订阅及服务</span><span>地址</span><span>设置</span></div>
+<div class="shade"></div>
+<div class="dlg">
+  <h2>添加信用卡或借记卡</h2>
+  <div class="brands">VISA · Mastercard · American Express</div>
+  <div class="f">卡号</div>
+  <div class="two"><div class="f">MM/YY</div><div class="f">CVC</div></div>
+  <div class="f">持卡人姓名</div>
+  <div class="addr">账单地址：土耳其<br>Ertuğrulgazi, Münzeviler Cd. No:16 …　Çankaya, Ankara 06487</div>
+  <div class="legal">继续操作即表示您创建 Google 付款帐号，并同意 Google 付款服务条款。</div>
+  <div class="actions"><span class="btn btn-text">取消</span><span class="btn btn-primary">保存</span></div>
+</div>
+</body></html>
