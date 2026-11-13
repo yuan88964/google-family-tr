@@ -14,6 +14,7 @@ annotations.yaml 格式（坐标单位是原图像素，矩形写左上角和右
       boxes:  [[x1, y1, x2, y2], ...]                  # 红色圆角框
       arrows: [[x1, y1, x2, y2], ...]                  # 从 (x1,y1) 指向 (x2,y2)
       marks:  [[x, y, 1], ...]                         # 编号圆点，圆心坐标 + 数字
+      nums:   [1, 2, ...]                              # 或者：按顺序给每个框配编号，圆点自动放在框左侧
       blur:   [[x1, y1, x2, y2], ...]                  # 高斯模糊打码
       crop:   [x1, y1, x2, y2]                         # 可选，最后裁剪
       width:  1600                                     # 可选，输出最大宽度
@@ -101,7 +102,11 @@ def annotate(name: str, spec: dict) -> Path:
             draw_arrow(d, (x1, y1), (x2, y2), w)
         r = round(22 * scale)
         f = font(round(26 * scale))
-        for x, y, n in spec.get("marks", []) or []:
+        marks = list(spec.get("marks", []) or [])
+        # nums: 按顺序给每个框配一个编号，圆点自动放在框的左侧
+        for (x1, y1, x2, y2), n in zip(spec.get("boxes", []) or [], spec.get("nums", []) or []):
+            marks.append([max(r + 2, x1 - r - 6), (y1 + y2) // 2, n])
+        for x, y, n in marks:
             d.ellipse([x - r - 2, y - r - 2, x + r + 2, y + r + 2], fill=WHITE)
             d.ellipse([x - r, y - r, x + r, y + r], fill=RED)
             d.text((x, y), str(n), fill=WHITE, font=f, anchor="mm")

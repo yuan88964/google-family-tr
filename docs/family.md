@@ -24,7 +24,7 @@ Google 对家庭组有几条硬规则，不满足的话，邀请会接受失败�
 1. 打开 [Gmail](https://mail.google.com)，找到标题类似"…邀请您加入家庭群组"的邮件。
 2. 点邮件里 <span class="step">1</span> 处的"接受邀请"（Accept invitation）。
 
-![Gmail 中的家庭组邀请邮件](images/11.png){ .shot }
+![Gmail 中的家庭组邀请邮件](images/fam-01.png){ .shot }
 
 !!! tip "没收到邀请邮件？"
     先看看"垃圾邮件"和"推广"文件夹。还是没有的话，登录账号后直接打开 [families.google.com](https://families.google.com)，页面上会显示待接受的邀请。注意：Google 家庭组没有"谁拿到都能用"的公开邀请链接，邀请只认管理员填写的那个 Gmail 地址，所以要确认管理员没有把你的地址填错。
@@ -34,13 +34,13 @@ Google 对家庭组有几条硬规则，不满足的话，邀请会接受失败�
 1. 点开邀请后，会打开一个确认页，上面显示管理员的名字和家庭组信息。
 2. 点 <span class="step">1</span> 处的"加入家庭群组"（Join family group）。
 
-![加入家庭组的确认页](images/12.png){ .shot }
+![加入家庭组的确认页](images/fam-02.png){ .shot }
 
 ## 第三步：确认已经加入
 
 打开 [families.google.com](https://families.google.com)，在成员列表里（<span class="step">1</span>）能看到你自己，就说明加入成功了。
 
-![families.google.com 的成员列表](images/13.png){ .shot }
+![families.google.com 的成员列表](images/fam-03.png){ .shot }
 
 !!! success "完成"
     现在你已经是这个土区家庭组的成员了。管理员订阅的共享服务一般几分钟内就会生效，比如打开 YouTube，头像旁边会出现 Premium 标志。

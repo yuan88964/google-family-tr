@@ -7,7 +7,7 @@
 ## 三步速览
 
 <div class="quick" markdown>
-<div markdown><b>1</b>**建立土区支付资料**<br>删掉旧的支付资料，新建一个土耳其资料并绑一张虚拟卡。[去看 →](payments.md)</div>
+<div markdown><b>1</b>**建立土区支付资料**<br>在 Google 付款中心新建一个土耳其资料，并绑一张虚拟卡。[去看 →](payments.md)</div>
 <div markdown><b>2</b>**确认 Play 国家**<br>打开 Google Play 设置，确认国家已经显示为土耳其。[去看 →](play-country.md)</div>
 <div markdown><b>3</b>**接受家庭组邀请**<br>点开邀请邮件里的"接受邀请"，加入家庭组。[去看 →](family.md)</div>
 </div>

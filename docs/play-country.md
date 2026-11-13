@@ -8,13 +8,13 @@
 
 1. 打开 [play.google.com](https://play.google.com)，点右上角你的头像，在菜单里点 <span class="step">1</span> 处的"设置"（Settings）。
 
-    ![play.google.com 头像菜单中的"设置"](images/09.png){ .shot }
+    ![play.google.com 头像菜单中的"设置"](images/play-01.png){ .shot }
 
 2. 在"常规"（General）下面找到"国家/地区和个人资料"（Country and profiles），看 <span class="step">1</span> 处显示的国家：
     - 显示**土耳其**：大功告成，进入下一节。
     - 还是旧的国家：看下面的排查方法。
 
-    ![Play 设置里的"国家/地区和个人资料"](images/10.png){ .shot }
+    ![Play 设置里的"国家/地区和个人资料"](images/play-02.png){ .shot }
 
 ## 国家没变怎么办 { #fix }
 
